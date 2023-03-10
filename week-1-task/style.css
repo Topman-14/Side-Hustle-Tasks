@@ -1,6 +1,8 @@
 body{
     background: url(assets/bg-1.jpg);
-    color: rgb(0, 202, 108);
+    color: rgb(3, 228, 141);
+    font-family: 'Comfortaa';
+    font-weight: 700;
 }
 h1{
     text-align: center;
@@ -15,10 +17,12 @@ form{
     padding: 20px;
     background-color: rgba(12, 16, 24, 0.863);
     border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.801);
 }
 .input-label{
     font-size: 1.5em;
-    margin:15px 0 5px 0;
+    margin:24px 0 10px 0;
+    font-weight: 600;
 }
 .input-label:first-child{
     margin:0 0 5px 0;
@@ -30,6 +34,14 @@ input{
     background-color: rgb(8, 11, 17);
     border: none;
     transition: 0.1s;
+    text-indent: 3px;
+    letter-spacing: 0.5px;
+    font-family: 'Comfortaa';
+}
+
+input:not([type="submit"]){
+    color:rgb(183, 250, 0);
+    animation: color-change 1.8s infinite linear;
 }
 input:not([type="submit"]):focus{
     outline: 0px;
@@ -41,7 +53,60 @@ input[type="submit"]{
     margin-top: 20px;
     padding-block: 15px;
     transition: 0.2s;
+    color: rgb(8, 11, 17);
+    font-weight: 600;
+    font-size: 1.3em;
 }
 input[type="submit"]:hover{
-    background-position: right center;
+    scale: 1.03;
+} 
+fieldset{
+    margin-top: 24px;
+    border-color: rgb(76, 91, 119);
+    border-width: 3px;
+}
+legend{
+    font-size: 1.3em;
+    padding-inline:5px;
+}
+.radio-label{
+    font-size: 1.2em;
+    margin:0px 20px 0px 10px ;
+}
+footer{
+    text-align: center; 
+    margin: 20px auto;
+    text-shadow: 0 0 10px black;
+    color: white;
+    background:rgba(12, 16, 24, 0.863);
+    width:fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    line-height: 1.3em;
+}
+footer > span{
+    color:rgb(3, 228, 141);
+}
+@keyframes color-change {
+    0%{
+        color: rgb(183, 250, 0);
+    }
+    25%{
+        color: rgb(0, 250, 12);
+    }
+    37.5%{
+        color: rgb(0, 225, 255);
+    }
+    50%{
+        color: rgb(0, 225, 255);
+    }
+    62.5%{
+        color: rgb(0, 225, 255);
+    }
+    75%{
+        color: rgb(0, 250, 12);
+    }
+    100%{
+        color: rgb(183, 250, 0);
+    }
 }
