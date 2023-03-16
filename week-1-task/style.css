@@ -8,6 +8,7 @@ h1{
     text-align: center;
     margin-top: 30px;
     font-size: 2.5em;
+    animation: fade 1s;
 }
 form{
     max-width: 450px;
@@ -18,7 +19,7 @@ form{
     background-color: rgba(12, 16, 24, 0.863);
     border-radius: 20px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.801);
-    animation: fade-up 1s;
+    animation: fade-up 1.5s;
 }
 .input-label{
     font-size: 1.5em;
@@ -84,14 +85,23 @@ footer{
     padding: 8px;
     border-radius: 5px;
     line-height: 1.3em;
+    animation: fade-up 1s 2s;
 }
 footer > span{
     color:rgb(3, 228, 141);
 }
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 @keyframes fade-up {
     0%{
         opacity: 0;
-        transform: translateY(-25px);
+        transform: translateY(30px);
     }
     50%{
         opacity: 1;
