@@ -18,6 +18,7 @@ form{
     background-color: rgba(12, 16, 24, 0.863);
     border-radius: 20px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.801);
+    animation: fade-up 1s;
 }
 .input-label{
     font-size: 1.5em;
@@ -86,6 +87,19 @@ footer{
 }
 footer > span{
     color:rgb(3, 228, 141);
+}
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 @keyframes color-change {
     0%{
