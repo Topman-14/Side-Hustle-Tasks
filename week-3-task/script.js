@@ -129,12 +129,20 @@ const accountObserver = new IntersectionObserver((entries, observer) => {
 
 accountObserver.observe(document.querySelector('#account'));
 
+const pword = document.querySelector('#pword');
+const confirmPword = document.querySelector('#confirmpword');
+
+
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log("Form submitted successfully");
-    alert("Form submitted successfully 👍")
-    setTimeout(() => form.submit(), 1000);
+    if(pword.textContent =! confirmPword.textContent){
+        confirmPword.setCustomValidity("Passwords Don't Match");    
+    }
+    else{
+        alert("Form submitted successfully 👍")
+        setTimeout(() => form.submit(), 1000);
+    }
   });
 
   alert('The is the week three task submission for the side hustle internship 7.0 - a Tesla landing page clone hosted with netlify.\n Check account in the menu to see the form')
