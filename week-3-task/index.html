@@ -7,25 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Electric Cars, Solar and Clean energy | Tesla</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Electric Cars, Solar and Clean energy | Tesla</title>
 </head>
 <body>
     <section id="banner">New Model 3 and Model Y vehicles qualify for a federal tax credit for eligible buyers. <a href="#">Learn More</a></section>
     <nav id="main-navbar">
         <a href="#"><img id="logo" src="./assets/tesla-logo.png" alt=""></a>
         <ul>
-            <li><a href="#models" class="nav-link">Model S</a></li>
             <li><a href="#model3" class="nav-link">Model 3</a></li>
-            <li><a href="#modelx" class="nav-link">Model X</a></li>
             <li><a href="#modely" class="nav-link">Model Y</a></li>
+            <li><a href="#models" class="nav-link">Model S</a></li>
+            <li><a href="#modelx" class="nav-link">Model X</a></li>
             <li><a href="#solar-panels" class="nav-link">Solar Panels</a></li>
             <li><a href="#solar-roof" class="nav-link">Solar Roof</a></li>
-            <li><a href="#powerwall" class="nav-link">Powerwall</a></li>
+            <li><a href="#Accessories" class="nav-link">Accessories</a></li>
         </ul>
         <ul>
-            <li><a href="#" class="nav-link">Shop</a></li>
-            <li><a href="#" class="nav-link">Account</a></li>
+            <li><a href="https://shop.tesla.com/" target="_blank" class="nav-link">Shop</a></li>
+            <li><a href="#account" class="nav-link">Account</a></li>
             <li><a href="#" class="nav-link">More</a></li>
             <li><a id="menu" class="nav-link">Menu</a></li>
         </ul>
@@ -33,34 +34,53 @@
     <nav id="mobile-nav">
         <div id="back-button">&#x2715</div>
         <ul>
-            <li><a href="#models" class="nav-link-mobile">Model S</a></li>
             <li><a href="#model3" class="nav-link-mobile">Model 3</a></li>
-            <li><a href="#modelx" class="nav-link-mobile">Model X</a></li>
             <li><a href="#modely" class="nav-link-mobile">Model Y</a></li>
+            <li><a href="#models" class="nav-link-mobile">Model S</a></li>
+            <li><a href="#modelx" class="nav-link-mobile">Model X</a></li>
             <li><a href="#solar-panels" class="nav-link-mobile">Solar Panels</a></li>
-            <li for="solar-roof"><a href="#solar-roof" class="nav-link-mobile">Solar Roof</a></li>
-            <li><a href="#powerwall" class="nav-link-mobile">Powerwall</a></li>
-            <li><a href="#shop" class="nav-link-mobile">Shop</a></li>
-            <li ><a href="#account" class="nav-link-mobile">Account</a></li>
+            <li><a href="#solar-roof" class="nav-link-mobile">Solar Roof</a></li>
+            <li><a href="#accessories" class="nav-link-mobile">Accessories</a></li>
+            <li><a href="https://shop.tesla.com/" target="_blank" class="nav-link-mobile">Shop</a></li>
+            <li><a href="#account" class="nav-link-mobile">Account</a></li>
         </ul>
     </nav>
     <section id="display-text">
         <div>
-            <h2>Model 3</h2>
-            <p>Leasing starting at $349/mo</p>
+            <h2 id="heading">Model 3</h2>
+            <p id="desc">Leasing starting at $349/mo</p>
         </div>
         <div>
-            <a href="">Custom Order</a>
-            <a href="">Demo Drive</a>
+            <a id="link1" href="">Custom Order</a>
+            <a id="link2" href="">Demo Drive</a>
         </div>
     </section>
     <section class="page" id="model3"></section>
+    <section class="page" id="modely"></section>
     <section class="page" id="models"></section>
     <section class="page" id="modelx"></section>
-    <section class="page" id="modely"></section>
     <section class="page" id="solar-panels"></section>
     <section class="page" id="solar-roof"></section>
     <section class="page" id="accessories"></section>
+    <section id="account">
+        <h2>Sign up for a Tesla Account!</h2>
+        <form action="">
+            <label class="input-label" for="name">Name</label>
+            <input type="text" name="name" placeholder="Input name here" required>
+
+            <label class="input-label" for="email">Email</label>
+            <input type="email" name="email" placeholder="example@email.com" required>
+
+            <label class="input-label" for="pword">Password</label>
+            <input type="password" name="pword" placeholder="Minimum of 8 characters" required>
+
+            <label class="input-label" for="pword">Confirm Password</label>
+            <input type="password" name="pword" placeholder="Enter the same password" required>
+            
+            <input type="submit" value="SUBMIT">
+        </form>
+        <p>Already have one? <br> <a href=""> Sign in</a></p>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

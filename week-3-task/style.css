@@ -104,13 +104,15 @@ li{
     align-items: center;
     justify-content: space-between;
     height: 70%;
+    transition: 0.4s;
 }
 #display-text > div > h2{
-    text-align: center;
     font-size: 3em;
+    text-align: center;
     margin-block: 6px;
 }
 #display-text > div > p{
+    text-align: center;
     margin-block:0px;
     font-size: 1.3em;
 }
@@ -180,6 +182,73 @@ li{
     background-size: cover;
     background-position: center;
     scroll-snap-align: start none;
+}
+#account{
+    background:url(./assets/accountbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start none;
+    height: 100vh;
+}
+#account > h2{
+    padding: 20vh 0 10px 0;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+#account > form{
+    height: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    background: rgba(3, 3, 3, 0.644);
+    padding: 14px;
+    max-width: 500px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+.input-label{
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+.input-label:first-child{
+    margin:0 0 5px 0;
+}
+input{
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    background: black;
+    text-indent: 4px;
+    color: white;
+    transition: 0.2s;
+}
+input[type="submit"]{
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    padding-block: 10px;
+}
+input[type="submit"]:hover{
+    background: rgba(0, 0, 0, 0.425);
+}
+input:not([type="submit"]):focus{
+    outline: 0px;
+    border-bottom: 3px solid red;
+}
+#account>p{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.466);
 }
 @keyframes slide-left {
     0%{
