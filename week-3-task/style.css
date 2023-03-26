@@ -1,7 +1,10 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 body{
     margin: 0px;
-    position: relative;
-    font-family: "yu gothic ui";
+    font-family: "Open sans";
 }
 #banner{
     min-height: 5vh;
@@ -15,7 +18,7 @@ body{
 a{
     color: rgb(255, 38, 0);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
 }
 li{
     list-style-type: none;
@@ -28,7 +31,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 50px;
+    padding-inline: 35px;
     position:sticky;
     top:calc(6vh + 20px);
     height: 8vh;
@@ -37,6 +40,58 @@ li{
     display: flex;
     gap: 25px;
     margin: 0px;
+}
+#menu{
+    display: none;
+    transition: 0.2s;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+#menu:hover{
+    background: rgba(0, 0, 0, 0.295);
+}
+#mobile-nav{
+    display: none;
+    position:fixed;
+    background: white;
+    right: 0px;
+    width: 40vw;
+    height: 100vh;
+    margin-top: -17vh;
+    z-index: 1;
+    animation: slide-left 0.7s;
+}
+#back-button{
+    padding: 8px 14px;
+    background: rgba(0, 0, 0, 0.322);
+    width:fit-content;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#back-button:hover{
+    background: rgba(0, 0, 0, 0.473);
+}
+#mobile-nav >ul{
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+.nav-link-mobile{
+    color: rgb(83, 83, 83);
+    font-size: 1.1em;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.nav-link-mobile:hover{
+    background: rgba(138, 138, 138, 0.226);
 }
 #logo{
     height: 18px;
@@ -67,52 +122,80 @@ li{
     background: rgba(255, 255, 255, 0.767);
     border-radius: 10px;
     margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+    transition: 0.2s;
+}
+#display-text > div > a:hover{
+    background: rgba(255, 255, 255, 0.507);
 }
 .page{
     height: 100vh;
 }
 #model3{
-    margin-top: calc(-30px - 13vh);
+    margin-top: calc(-30px - 12vh);
     background:url(./assets/model3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
 }
 #models{
     background:url(./assets/models.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
 }
 #modelx{
     background:url(./assets/modelx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
 }
 #modely{
     background:url(./assets/modely.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
 }
 #solar-panels{
     background:url(./assets/solar-panels.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
 }
 #solar-roof{
     background:url(./assets/solar-roof.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
 }
 #accessories{
     background:url(./assets/accessories.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start none;
+}
+@keyframes slide-left {
+    0%{
+        transform: translateX(42vw);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-right {
+    100%{
+        transform: translateX(42vw);
+        opacity: 0;
+    }
 }
 @media (max-width: 1285px) {
     .nav-link{
@@ -123,5 +206,6 @@ li{
         background: rgba(0, 0, 0, 0.205);
         padding: 8px;
         border-radius: 8px;
+        font-size: 1em;
     }
 }
