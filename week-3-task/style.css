@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    position: relative;
+    font-family: "yu gothic ui";
+}
+#banner{
+    min-height: 5vh;
+    color: white;
+    background: linear-gradient(180deg, black, black, black, rgba(0, 0, 0, 0));
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+    position: sticky;
+    top:0px;
+}
+a{
+    color: rgb(255, 38, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+li{
+    list-style-type: none;
+}
+.nav-link{
+    color: rgb(22, 22, 22);
+    font-size: 1.2em;
+}
+#main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    position:sticky;
+    top:calc(6vh + 20px);
+    height: 8vh;
+}
+#main-navbar>ul{
+    display: flex;
+    gap: 25px;
+    margin: 0px;
+}
+#logo{
+    height: 18px;
+}
+#display-text{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+}
+#display-text > div > h2{
+    text-align: center;
+    font-size: 3em;
+    margin-block: 6px;
+}
+#display-text > div > p{
+    margin-block:0px;
+    font-size: 1.3em;
+}
+#display-text > div > a{
+    color: black;
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.767);
+    border-radius: 10px;
+    margin: 20px;
+}
+.page{
+    height: 100vh;
+}
+#model3{
+    margin-top: calc(-30px - 13vh);
+    background:url(./assets/model3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#models{
+    background:url(./assets/models.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#modelx{
+    background:url(./assets/modelx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#modely{
+    background:url(./assets/modely.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#solar-panels{
+    background:url(./assets/solar-panels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#solar-roof{
+    background:url(./assets/solar-roof.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#accessories{
+    background:url(./assets/accessories.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 1285px) {
+    .nav-link{
+        display: none;
+    }
+    #menu{
+        display: unset;
+        background: rgba(0, 0, 0, 0.205);
+        padding: 8px;
+        border-radius: 8px;
+    }
+}
