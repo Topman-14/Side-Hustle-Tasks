@@ -145,4 +145,6 @@ form.addEventListener('submit', (e) => {
     }
   });
 
-  alert('The is the week three task submission for the side hustle internship 7.0 - a Tesla landing page clone hosted with netlify.\n Check account in the menu to see the form')
+  setTimeout(()=>{
+    alert('Check account in the menu to see the form \n This is the week three task submission for the side hustle internship 7.0 \n- a Tesla landing page clone hosted with netlify.')
+  }, 600)
