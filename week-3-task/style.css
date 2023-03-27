@@ -72,7 +72,7 @@ li{
     font-weight: 700;
     font-size: 1.5em;
     border-radius: 5px;
-    margin: 10px;
+    margin: 20px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -88,7 +88,7 @@ li{
 }
 .nav-link-mobile{
     color: rgb(83, 83, 83);
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 8px 10px;
     border-radius: 8px;
     transition: 0.2s;
@@ -201,7 +201,7 @@ li{
     font-weight: 700;
 }
 #account > form{
-    height: 50%;
+    height: 40%;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -227,9 +227,9 @@ input{
     font-size: 1em;
     border-radius: 5px;
     border: none;
-    padding: 4px;
+    padding: 6px 0;
     background: black;
-    text-indent: 4px;
+    text-indent: 8px;
     color: white;
     transition: 0.2s;
 }
@@ -245,6 +245,10 @@ input[type="submit"]:hover{
 input:not([type="submit"]):focus{
     outline: 0px;
     border-bottom: 3px solid red;
+}
+input[type="date"]{
+    color-scheme: dark;
+    text-indent: 4px;
 }
 #account>p{
     color: white;
