@@ -2,32 +2,33 @@ const menuBtn = document.querySelector('#menu');
 const mobileMenu = document.querySelector('#mobile-nav');
 const menuBack = document.querySelector("#back-button");
 const mobileNavLink = document.querySelectorAll('.nav-link-mobile');
-
+const mobileNavBlind = document.querySelector('#mobile-nav-blind');
 
 menuBtn.addEventListener('click', () =>{
-    mobileMenu.style.animation ='slide-left 0.7s';
+  mobileMenu.style.display = 'unset';
 
-    setTimeout(()=>{
-        mobileMenu.style.display = 'unset'
-    }, 50)
+  mobileMenu.style.animation ='slide-left 0.7s';
+  
+  mobileNavBlind.style.display ="unset"
+
 })
 
-menuBack.addEventListener('click', () =>{
-    mobileMenu.style.animation ='slide-right 0.7s';
+const menuClose = () =>{
+  mobileMenu.style.animation ='slide-right 0.7s';
+  
+  mobileNavBlind.style.display ="none"
+  setTimeout(()=>{
+      mobileMenu.style.display = 'none'
 
-    setTimeout(()=>{
-        mobileMenu.style.display = 'none'
-    }, 650)
-})
+  }, 650)
+}
+
+menuBack.addEventListener('click', menuClose);
+
+mobileNavBlind.addEventListener('click', menuClose);
 
 mobileNavLink.forEach(link => {
-    link.addEventListener('click', () =>{
-        mobileMenu.style.animation ='slide-right 0.7s';
-    
-        setTimeout(()=>{
-            mobileMenu.style.display = 'none'
-        }, 650)
-    })
+    link.addEventListener('click', menuClose)
 });
 
 const pages = document.querySelectorAll('.page');
@@ -147,4 +148,5 @@ form.addEventListener('submit', (e) => {
 
   setTimeout(()=>{
     alert('Check account in the menu to see the form \n This is the week three task submission for the side hustle internship 7.0 \n- a Tesla landing page clone hosted with netlify.')
+
   }, 600)
