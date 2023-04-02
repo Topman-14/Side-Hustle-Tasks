@@ -31,6 +31,26 @@ mobileNavLink.forEach(link => {
     link.addEventListener('click', menuClose)
 });
 
+const downButton = 
+document.querySelector('#downbtn');
+
+document.getScroll = function() {
+  if (window.pageYOffset != undefined) {
+      return [pageXOffset, pageYOffset];
+  } else {
+      var sx, sy, d = document,
+          r = d.documentElement,
+          b = d.body;
+      sx = r.scrollLeft || b.scrollLeft || 0;
+      sy = r.scrollTop || b.scrollTop || 0;
+      return [sx, sy];
+  }
+}
+
+downButton.addEventListener('click', ()=>{
+  window.scroll(0, document.getScroll()[1] + 700);
+})
+
 const pages = document.querySelectorAll('.page');
 const displayText = document.querySelector('#display-text');
 
