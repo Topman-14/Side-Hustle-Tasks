@@ -26,7 +26,7 @@ li{
 }
 .nav-link{
     color: rgb(22, 22, 22);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 #main-navbar{
     display: flex;
@@ -312,7 +312,7 @@ input[type="date"]{
         transform:rotateY(360deg)
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1250px) {
     .nav-link{
         display: none;
     }
@@ -348,6 +348,27 @@ input[type="date"]{
     }
     #mobile-nav > ul{
         padding: 10px;
+    }   
+}
+/* Samsung Galaxy fold 😭😭*/
+@media (max-width: 290px){
+    #main-navbar{
+        padding: 30px 12px 0px 12px;
     }
-    
+    #display-text{
+        height:75%;
+    }
+    #display-text > div > h2{
+        margin: 0px;
+    }
+    #display-text > div > a{
+        padding: 15px 20px;
+        margin: 10px 0px 0px 0px;
+        color: black;
+        display: block;
+        text-align: center;
+    }
+    #downbtn{
+        margin-top: 15px;
+    }
 }
