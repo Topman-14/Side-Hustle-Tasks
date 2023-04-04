@@ -327,30 +327,22 @@ input[type="date"]{
     #modelx{
         background: url("./assets/modelxportrait.jpg");
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: 50% 25%;
     }
     #modely{
         background: url("./assets/modelyportrait.jpg");
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: 50% 25%;
     }
     #solar-panels{
         background: url("./assets/solarpanelsportrait.jpg");
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: 50% 30%;
     }
     #solar-roof{
         background: url("./assets/solarroofportrait.jpg");
         background-size: cover;
-        background-position: 50% 50%;
-    }
-    #accessories{
-        background: url("./assets/accessoriesportrait.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-    #account{
-
+        background-position: 50% 40%;
     }
 }
 @media (max-width: 1250px) {
