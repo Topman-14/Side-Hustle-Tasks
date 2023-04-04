@@ -109,7 +109,7 @@ li{
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    height: 80%;
+    height: 84%;
     transition: 0.4s;
 }
 #display-text > div > h2{
@@ -221,6 +221,7 @@ li{
     font-size: 2em;
     text-align: center;
     font-weight: 700;
+    font-family: Jost;
 }
 #account > form{
     height: 40%;
@@ -232,7 +233,7 @@ li{
     margin: 0 auto;
     background: rgba(3, 3, 3, 0.644);
     padding: 14px;
-    max-width: 500px;
+    max-width: 400px;
     min-width: 250px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -312,6 +313,46 @@ input[type="date"]{
         transform:rotateY(360deg)
     }
 }
+@media (max-width: 600px) {
+    #model3{
+        background: url("./assets/model3portrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #models{
+        background: url("./assets/modelsportrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #modelx{
+        background: url("./assets/modelxportrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #modely{
+        background: url("./assets/modelyportrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #solar-panels{
+        background: url("./assets/solarpanelsportrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #solar-roof{
+        background: url("./assets/solarroofportrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #accessories{
+        background: url("./assets/accessoriesportrait.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #account{
+
+    }
+}
 @media (max-width: 1250px) {
     .nav-link{
         display: none;
@@ -334,7 +375,7 @@ input[type="date"]{
         padding: 15px;
     }
     #model3{
-        margin-top: calc(-30px - 12vh);
+        margin-top: calc(-30px - 9vh);
     }
     #banner{
         font-size: 0.8em;
@@ -348,7 +389,11 @@ input[type="date"]{
     }
     #mobile-nav > ul{
         padding: 10px;
-    }   
+    }
+    #downbtn{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
 }
 /* Samsung Galaxy fold 😭😭*/
 @media (max-width: 290px){
