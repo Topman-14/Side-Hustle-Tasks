@@ -358,8 +358,14 @@ input[type="date"]{
     }
 }
 @media (max-width: 600px) {
+    #banner{
+        display: none;
+    }
     #main-navbar>ul{
         gap: 0px;
+    }
+    #main-navbar{
+        top:calc(1.5vh);
     }
     #display-text > div > a{
         font-size: 1em;
@@ -367,7 +373,7 @@ input[type="date"]{
         padding: 15px;
     }
     #model3{
-        margin-top: calc(-30px - 9vh);
+        margin-top: calc(-30px - 3.4vh);
     }
     #banner{
         font-size: 0.8em;
@@ -388,12 +394,12 @@ input[type="date"]{
     }
 }
 /* Samsung Galaxy fold 😭😭*/
-@media (max-width: 290px){
+@media (max-width: 350px){
     #main-navbar{
-        padding: 30px 12px 0px 12px;
+        padding: 10px 20px 20px 20px;
     }
     #display-text{
-        height:75%;
+        height:85%;
     }
     #display-text > div > h2{
         margin: 0px;
@@ -407,8 +413,5 @@ input[type="date"]{
     }
     #downbtn{
         margin-top: 15px;
-    }
-    #mobile-nav{
-        margin-top: -24vh;
     }
 }
